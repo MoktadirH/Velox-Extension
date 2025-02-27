@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Velox Panel Toggle",
+    "version": "1.0",
+    "description": "Adds a button to toggle the Velox panel.",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://w5r2.veloximaging.net/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://w5r2.veloximaging.net/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
