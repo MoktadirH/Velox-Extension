@@ -12,7 +12,7 @@ function togglePanelVisibility() {
 function addToggleButton() {
   let button = document.getElementById("veloxToggleButton");
 
-  if (!button) {
+  if (!button & window.location.href === "https://w5r2.veloximaging.net/CM/Transcription/Transcribe") {
     button = document.createElement("button");
     button.id = "veloxToggleButton";
     button.innerText = "Toggle Velox Panel";
